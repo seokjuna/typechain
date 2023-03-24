@@ -2,6 +2,10 @@
     "include": ["src"], // 자바스크립트로 컴파일하고 싶은 모든 디렉터리
     "compilerOptions": {
         "outDir": "build", // outDir: 자바스크립트 파일이 생성될 디렉터리 지정
-        "target": "ES6" // 자바스크립트 버전 지정
+        "target": "ES6", // 자바스크립트 버전 지정
+        "lib": ["ES6"], // 라이브러리의 정의 파일을 특정해줌 (런타임 환경)
+        "strict": true, // 엄격한 타입 검사 옵션을 활성화
+        "esModuleInterop": true,
+        "module": "CommonJS"
     }
 }
